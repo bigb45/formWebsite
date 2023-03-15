@@ -3,10 +3,9 @@
 :root {
   --background-color: #edede9;
 
-  --color: #2a9d8f;
-  --color: #e9c46a;
-  --color: #f4a261;
-  --color: #e76f51;
+ 
+  --accent: #f4a261;
+  --accent-hover: #e76f51;
   --color: #264653;
 }
 html {
@@ -18,13 +17,18 @@ body {
   /* overflow: hidden; */
 }
 
-img {
-  object-fit: cover;
+.image {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 600px;
+  background-image: url("https://images.unsplash.com/photo-1673911673458-44da6dccd270?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
 }
 .main {
   display: flex;
-
   align-items: center;
+  justify-content: space-between;
+  margin-right: 400px;
   gap: 100px;
   padding-right: 30px;
 }
@@ -38,34 +42,54 @@ img {
 p.main-line {
   font-size: 38px;
   font-weight: 300;
-  
 }
-fieldset{
-    border-color: #f4a261;
-    border-style: dashed;
-
+fieldset {
+  border-color: var(--accent);
+  border-style: dashed;
 }
-fieldset:focus-within, fieldset:hover{
-    border-color: #e76f51;
-    border-style: solid;
+fieldset:focus-within,
+fieldset:hover {
+  border-color: var(--accent-hover);
+  border-style: solid;
 }
-label{
-    font-size: 12px;
-}
-
-fieldset{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: space-around;
-    margin-bottom: 30px;
+label {
+  font-size: 12px;
 }
 
-.form-element{
-    display: flex;
-    justify-content: space-around;
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
-.form-element > div{
-    display: flex;
-    flex-direction: column;
+
+.form-element {
+  display: flex;
+  justify-content: space-around;
+}
+.form-element > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+img{
+  height: 80px;
+  width: 80px;
+}
+
+.submit{
+  padding: 15px 40px;
 }
