@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F.O.R.M</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="image">
+        <img
+          src="https://images.unsplash.com/photo-1673911673458-44da6dccd270?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt="a large green plant in a pot on a table"
+        />
+      </div>
+
+      <div class="form">
+        <div class="message">
+          <p>
+            This news letter is your way to the top, sign up here and you are
+            guaranteed to be one of the greats. what do you have to lose?
+            nothing. your inbox is empty anyway, we can give you a reason to
+            live.
+          </p>
+          <p class="main-line">You've got nothing left to lose.</p>
+        </div>
+        <form action="post">
+          <fieldset>
+            <legend>Let's do it.</legend>
+            <div class="form-element name">
+              <div class="first-name">
+                <label for="name">FIRST NAME</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+
+              <div class="last-name">
+                <label for="last-name">LAST NAME</label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Your Last Name"
+                />
+              </div>
+            </div>
+
+            <div class="form-element contact">
+              <div class="email">
+                <label for="email">EMAIL</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-element phone-number">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input
+                  type="text"
+                  name="phone-number"
+                  placeholder="Your Phone Number"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-element credentials">
+              <div class="password">
+                <label for="password">PASSWORD</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                  minlength="8"
+                  required
+                />
+              </div>
+              <div class="password-confirm">
+                <label for="password-confirm">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="password-confirm"
+                  id="password-confirm"
+                  placeholder="Confirm Password"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+          <input type="button" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
